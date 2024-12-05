@@ -5,7 +5,7 @@ services:
     image: mysql:8.4.0
     volumes:
       - /home/david/dockerdata/mysql840:/var/lib/mysql
-    restart: on-failure:2
+    restart: no  # on-failure:2
     environment:
       - MYSQL_ROOT_PASSWORD=geometry
       - MYSQL_DATABASE=SPRING
